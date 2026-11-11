@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dx75wt3gsfu8g"]
+
+[ext_resource type="Script" uid="uid://d1dfdpxoe2xj0" path="res://RobotObject/WayPoint.cs" id="1_3so25"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkf17"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 0, 0, 1)
+grow = true
+grow_amount = 0.1
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbngi"]
+next_pass = SubResource("StandardMaterial3D_pkf17")
+shading_mode = 0
+albedo_color = Color(0.10332253, 0.71893895, 0.6821265, 1)
+stencil_mode = 1
+stencil_flags = 2
+stencil_color = Color(1, 0, 0, 1)
+stencil_outline_thickness = 0.1
+
+[sub_resource type="SphereMesh" id="SphereMesh_hp0wl"]
+
+[node name="Point" type="MeshInstance3D" unique_id=1346746873]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_mbngi")
+cast_shadow = 0
+lod_bias = 0.001
+mesh = SubResource("SphereMesh_hp0wl")
+script = ExtResource("1_3so25")

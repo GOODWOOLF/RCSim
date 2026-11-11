@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://e56joumg0yiy"]
+
+[ext_resource type="PackedScene" uid="uid://dndl0nlux5ipo" path="res://RTK/CellObjects/Robots/RobotRR.tscn" id="1_ig7tw"]
+
+[node name="Node3D" type="Node3D" unique_id=1350233976]
+
+[node name="Robot" parent="." unique_id=668437637 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, 2.3841858e-07, 2.3841858e-07)
+ID = "58b57489-eda3-4572-8fef-01c1b7594ea5"
